@@ -36,18 +36,17 @@ const Hero: React.FC = () => {
       </p>
 
       <div className="flex items-center gap-3">
-        <button
-          type="button"
-          className="py-3 px-5 border-2 rounded-lg font-medium bg-transparent transition-colors hover:bg-slate-200 border-slate-200"
-          onClick={() =>
-            window.open(
-              "https://twitter.com/haardikkk/status/1645794223281815552",
-              "_blank"
-            )
-          }
+        <Link
+          href="https://twitter.com/haardikkk/status/1645794223281815552"
+          target="_blank"
         >
-          Read More
-        </button>
+          <button
+            type="button"
+            className="py-3 px-5 border-2 rounded-lg font-medium bg-transparent transition-colors hover:bg-slate-200 border-slate-200"
+          >
+            Read More
+          </button>
+        </Link>
 
         <Link href="/visualize">
           <button
