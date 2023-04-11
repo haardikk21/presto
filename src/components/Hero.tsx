@@ -8,7 +8,10 @@ const clash = localFont({ src: "../app/ClashDisplay-Variable.ttf" });
 const Hero: React.FC = () => {
   return (
     <div className="py-10 flex flex-col items-center gap-4">
-      <Link href="https://twitter.com/..." target="_blank">
+      <Link
+        href="https://twitter.com/haardikkk/status/1645794223281815552"
+        target="_blank"
+      >
         <div className="px-3 py-1 rounded-3xl transition-all hover:scale-105 bg-sky-200 border-2 border-sky-300 font-medium flex items-center gap-2">
           <Image alt="Twitter Logo" src="/twitter.svg" width={20} height={20} />
           Introducing Presto
