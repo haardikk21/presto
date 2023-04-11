@@ -1,4 +1,4 @@
-# Presto - Transform your ideas with AI
+# [Presto - Transform your ideas with AI](https://presto-mauve.vercel.app/)
 
 Presto is an AI-powered tool that can convert hand-drawn scribbles to quality sketches, photos, paintings, and more to help you quickly iterate on ideas.
 
@@ -6,9 +6,13 @@ Built using [Next.js](https://nextjs.org), [TypeScript](https://typescriptlang.o
 
 Powered by [Vercel](https://vercel.com), [Replicate](https://replicate.com), and [Upload](https://upload.io).
 
-[Try it yourself!](https://presto.app)
+[Try it yourself!](https://presto-mauve.vercel.app/)
 
 ![](./demo.gif)
+
+## How it Works
+
+Presto uses an ML model called [ControlNet](https://github.com/lllyasviel/ControlNet) to convert hand-drawn scribbles to photos and sketches. This application provides the ability to draw a scribble, or upload an image of a scribble, along with a 1-3 word description of what you draw which will be converted using ControlNet. The ML model is hosted and run through [Replicate](https://replicate.com). Uploaded scribbles are stored on [Upload](https://upload.io).
 
 ## Deploy
 
@@ -18,25 +22,43 @@ Run your own version of Presto by deploying on Vercel.
 
 ## Running Locally
 
-1. Clone the repository
+### Clone the Repository
 
-`git clone https://github.com/haardikk21/presto`
+```
+git clone https://github.com/haardikk21/presto
+```
 
-2. Install `pnpm` if you don't already have it (Optional)
+### Install pnpm and dependencies
 
-Read the guide here - [https://pnpm.io/installation](https://pnpm.io/installation)
+If you don't already have `pnpm`, install it by following the guide here - [https://pnpm.io/installation](https://pnpm.io/installation)
 
-3. Install dependencies
+Then, install the dependencies
 
-`pnpm install`
+```
+pnpm install
+```
 
-4. Setup environment variables
+### Get Replicate API Key
 
-Copy `.env.example` to `.env` and add `REPLICATE_API_KEY` and `NEXT_PUBLIC_UPLOAD_PUBLIC_KEY`
+1. Go to [Replicate](https://replicate.com) and make an account
+2. Click on `Account` in the top right and take a note of your `API Token`
 
-5. Run the project
+### Get Upload.io API Key
 
-`pnpm dev`
+1. Go to [Upload](https://upload.io) and make an account
+2. Click on `API Keys` in the top right and take a note of your `Public API Key`
+
+### Store API Keys in .env
+
+Copy `.env.example` to `.env` and add `REPLICATE_API_KEY` and `NEXT_PUBLIC_UPLOAD_PUBLIC_KEY` that you got from the above steps.
+
+5. Run the application
+
+```
+pnpm dev
+```
+
+The app will now be available at [http://localhost:3000](http://localhost:3000).
 
 ## Contributions
 
