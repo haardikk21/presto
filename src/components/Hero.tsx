@@ -39,6 +39,12 @@ const Hero: React.FC = () => {
         <button
           type="button"
           className="py-3 px-5 border-2 rounded-lg font-medium bg-transparent transition-colors hover:bg-slate-200 border-slate-200"
+          onClick={() =>
+            window.open(
+              "https://twitter.com/haardikkk/status/1645794223281815552",
+              "_blank"
+            )
+          }
         >
           Read More
         </button>
