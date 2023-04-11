@@ -8,7 +8,7 @@ Powered by [Vercel](https://vercel.com), [Replicate](https://replicate.com), and
 
 [Try it yourself!](https://presto.app)
 
-![](./screenshot.png)
+![](./demo.gif)
 
 ## Deploy
 
